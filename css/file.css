@@ -1,0 +1,66 @@
+form{
+	max-width: 400px;
+	margin:0px auto;
+	padding: 20px;
+
+}
+form input{
+	margin-bottom: 10px;
+}
+.text-center{
+	color: blue;
+}
+.r{
+	width: 80px;
+	
+}
+.container{
+	background: #ddd;
+	height: auto;
+	width: 600px;
+	margin-top: 20px;
+	border-radius: 50px;
+}
+.csal
+{
+	height: 55px;
+	text-align: center;
+	display: none;
+}
+.usere{
+	height: 55px;
+	text-align: center;
+	display: none;
+
+}
+.psere{
+height: 55px;
+	text-align: center;
+	display: none;
+
+}
+.repass{
+height: 55px;
+	text-align: center;
+	display: none;
+
+}
+.phone{
+height: 55px;
+	text-align: center;
+	display: none;
+
+}
+.age
+{
+height: 55px;
+	text-align: center;
+	display: none;
+
+}
+.coun{
+height: 55px;
+	text-align: center;
+	display: none;
+
+}
