@@ -133,7 +133,49 @@ class admin  extends person{
       		     
           	
 
-          }
+		  }
+		  public function selectemail($email)
+		  {    
+			  $db=new database();
+				 $ret;
+				  $row = array();
+					   $query;
+			 $query="SELECT * FROM `admin` Where email = '$email' AND pass='$pass'";
+				 $result = mysqli_query($db->link, $query);
+			  while ($data = mysqli_fetch_assoc($result)){
+				  $row[] = $data ;
+			  }
+					  
+			  if ( count($row) != 0){
+				  $this->email=$email;
+				  $ret=true;
+			  }
+			  else  {
+				  $ret=false;
+			  }
+			  return $ret;
+			}
+			public function login ($email,$pass){
+				$db=new database();
+				$row = array();
+				$query;
+				$hash=$pass;
+		 
+				
+				 $query="SELECT * FROM `admin` Where email = '$email' AND pass='$hash'";
+				  
+				$result = mysqli_query($db->link, $query);
+		  
+				 while ($data = mysqli_fetch_assoc($result)){
+					 $row = $data ;
+				 }
+				 if(count($row) !== 0){
+					 return true;
+					  
+				 }else{
+					 return false ;
+				 }
+			 }
 
 
 }
