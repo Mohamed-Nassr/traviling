@@ -1,6 +1,6 @@
 <?php
 require_once 'db.php';
-require_once 'personInterface.php';
+require_once 'personStartegy.php';
 class person implements personInterface{
     public $name;
     public $pass;
